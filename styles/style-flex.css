@@ -1,12 +1,13 @@
 :root{
     --main-color: #ff9900;
     --secondary-color: gray;
+    --white-color: #fff;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Josefin Sans', sans-serif;
     --border: 1px solid  rgba(0,0,0,0.24);
     --shadow: 10px 10px 5px -8px rgba(0,0,0,0.24);
-    
 }
+
 body, header, nav, h1, p{
     margin: 0;
 }
@@ -27,6 +28,7 @@ h1{
 }
 h1::first-letter{
     font-size: 70px;
+    color: var(--white-color)
 }
 
 footer{
@@ -80,7 +82,7 @@ main{
 }
 .product-card:hover{
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--white-color);
     transform: scale(1.05,1.05);
 }
 .product-name{
@@ -105,7 +107,7 @@ footer ul{
     margin: 0;
 }
 
-footer > ul > li{
+.footer-link{
     font-family: var(--secondary-font);
     font-size: 10px;
     letter-spacing: normal;
@@ -127,7 +129,7 @@ footer > ul > li{
 
     transform: rotate(-30deg);
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--white-color);
 }
 .btn-to-top{
     width: 100px;
@@ -137,21 +139,24 @@ footer > ul > li{
     border-radius: 50%;
     font-family: var(--secondary-font);
     font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     position: fixed;
     bottom: 80px;
     right: 50px;
     background-color: var(--main-color);
 }
+.btn-to-top > p{
+    position: relative;
+    top: 45%;
+}
 
 .btn-to-top:hover{
     box-shadow: none;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--white-color);
 }
+
 a{
-    color: white;
+    color: var(--white-color);;
 }
 

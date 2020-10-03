@@ -1,45 +1,63 @@
 :root{
     --main-color: #ff9900;
     --secondary-color: gray;
+    --white-color: #fff;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Josefin Sans', sans-serif;
     --border: 1px solid  rgba(0,0,0,0.24);
     --shadow: 10px 10px 5px -8px rgba(0,0,0,0.24);
-    
 }
+
 body, header, nav, h1, p{
     margin: 0;
 }
+
 header, footer{
     background-color: var(--secondary-color);
     color: var(--main-color);
-    margin:0;
+    margin: 0;
     text-align: center;
     font-family: var(--main-font);
     letter-spacing: 3px;
+    font-size: 35px;
 }
+
+h1{
+    font-size: 55px;
+    text-transform: uppercase;
+}
+h1::first-letter{
+    font-size: 70px;
+    color: var(--white-color);
+}
+
 footer{
     width: 100%;
     margin: 0;
 }
-
+nav, nav>ul{
+    /**/
+}
 nav{
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--white-color);
     padding: 0px 20px;
+    /**/
     position: sticky;
     top: 0px;
     z-index: 1;
 }
-nav, nav>ul{
-    display: flex;
-}
+
 ul{
     list-style: none;
 }
 li{
     margin: 0px 10px;
 }
+main{
+  /**/
+}
+
 .product-card{
     width: 250px;
     height: 250px;
@@ -47,17 +65,19 @@ li{
     padding: 50px 0px;
     border: var(--border);
     border-radius: 10px;
+    text-align: center;
+    /**/
     -webkit-box-shadow: var(--shadow);
     -moz-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
-    flex-grow: 1;
     transition: transform 0.5s, background-color 0.2s, color 0.2s;
 }
 .product-card:hover{
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--white-color);
     transform: scale(1.05,1.05);
 }
+
 .product-name{
     font-family: var(--main-font);
     font-size: 40px;
@@ -73,14 +93,14 @@ img{
 }
 footer{
     text-align: left;
-    color: #fff;
+    color: var(--white-color);
     padding: 30px 0px;
 }
 footer ul{
     margin: 0;
 }
 
-footer > ul > li{
+.footer-link{
     font-family: var(--secondary-font);
     font-size: 10px;
     letter-spacing: normal;
@@ -90,7 +110,8 @@ footer > ul > li{
 #special-offer{
     background-color: var(--main-color);
     position: relative;
-    order: -6;
+    /*  */
+    /* */
 }
 
 #special-offer-title{
@@ -99,31 +120,36 @@ footer > ul > li{
     position: absolute;
     left: -20px;
     top: 20px;
-
     transform: rotate(-30deg);
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--white-color);
 }
 .btn-to-top{
     width: 100px;
     height: 100px;
+    background-color: var(--main-color);
     border: var(--border);
     box-shadow: var(--shadow);
     border-radius: 50%;
     font-family: var(--secondary-font);
     font-size: 12px;
+    text-align: center;
     position: fixed;
     bottom: 80px;
     right: 50px;
-    background-color: var(--main-color);
+}
+.btn-to-top > p{
+    position: relative;
+    top: 45%;
 }
 
 .btn-to-top:hover{
     box-shadow: none;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--white-color);
 }
+
 a{
-    color: white;
+    color: var(--white-color);
 }
 
