@@ -28,7 +28,7 @@ h1{
 }
 h1::first-letter{
     font-size: 70px;
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
 footer{
@@ -38,28 +38,29 @@ footer{
 
 nav{
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--white-color);
     display: flex;
     padding: 0px 20px;
-    /**/
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0px;
     z-index: 1;
 }
 nav, nav>ul{
-    /**/
+    display: flex;
 }
-
 ul{
     list-style: none;
 }
-
 li{
     margin: 0px 10px;
 }
-
 main{
-    /**/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-card{
@@ -69,10 +70,14 @@ main{
     padding: 50px 0px;
     border: var(--border);
     border-radius: 10px;
-    /**/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     -webkit-box-shadow: var(--shadow);
     -moz-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
+    flex-grow: 1;
     transition: transform 0.5s, background-color 0.2s, color 0.2s;
 }
 .product-card:hover{
@@ -93,13 +98,11 @@ main{
 img{
     width: 130px;
 }
-
 footer{
     text-align: left;
-    color: #fff;
+    color: var(--white-color);
     padding: 30px 0px;
 }
-
 footer ul{
     margin: 0;
 }
@@ -128,7 +131,6 @@ footer ul{
     background-color: var(--secondary-color);
     color: var(--white-color);
 }
-
 .btn-to-top{
     width: 100px;
     height: 100px;
@@ -143,7 +145,6 @@ footer ul{
     right: 50px;
     background-color: var(--main-color);
 }
-
 .btn-to-top > p{
     position: relative;
     top: 45%;
