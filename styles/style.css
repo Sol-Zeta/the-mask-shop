@@ -15,7 +15,7 @@ body, header, nav, h1, p{
 header, footer{
     background-color: var(--secondary-color);
     color: var(--main-color);
-    margin: 0;
+    margin:0;
     text-align: center;
     font-family: var(--main-font);
     letter-spacing: 3px;
@@ -28,34 +28,38 @@ h1{
 }
 h1::first-letter{
     font-size: 70px;
-    color: var(--white-color);
+    color: var(--white-color)
 }
 
 footer{
     width: 100%;
     margin: 0;
 }
-nav, nav>ul{
-    /**/
-}
+
 nav{
     background-color: var(--main-color);
-    color: var(--white-color);
+    color: #fff;
+    display: flex;
     padding: 0px 20px;
     /**/
     position: sticky;
     top: 0px;
     z-index: 1;
 }
+nav, nav>ul{
+    /**/
+}
 
 ul{
     list-style: none;
 }
+
 li{
     margin: 0px 10px;
 }
+
 main{
-  /**/
+    /**/
 }
 
 .product-card{
@@ -65,7 +69,6 @@ main{
     padding: 50px 0px;
     border: var(--border);
     border-radius: 10px;
-    text-align: center;
     /**/
     -webkit-box-shadow: var(--shadow);
     -moz-box-shadow: var(--shadow);
@@ -77,7 +80,6 @@ main{
     color: var(--white-color);
     transform: scale(1.05,1.05);
 }
-
 .product-name{
     font-family: var(--main-font);
     font-size: 40px;
@@ -91,11 +93,13 @@ main{
 img{
     width: 130px;
 }
+
 footer{
     text-align: left;
-    color: var(--white-color);
+    color: #fff;
     padding: 30px 0px;
 }
+
 footer ul{
     margin: 0;
 }
@@ -110,8 +114,7 @@ footer ul{
 #special-offer{
     background-color: var(--main-color);
     position: relative;
-    /*  */
-    /* */
+    order: -6;
 }
 
 #special-offer-title{
@@ -120,14 +123,15 @@ footer ul{
     position: absolute;
     left: -20px;
     top: 20px;
+
     transform: rotate(-30deg);
     background-color: var(--secondary-color);
     color: var(--white-color);
 }
+
 .btn-to-top{
     width: 100px;
     height: 100px;
-    background-color: var(--main-color);
     border: var(--border);
     box-shadow: var(--shadow);
     border-radius: 50%;
@@ -137,7 +141,9 @@ footer ul{
     position: fixed;
     bottom: 80px;
     right: 50px;
+    background-color: var(--main-color);
 }
+
 .btn-to-top > p{
     position: relative;
     top: 45%;
@@ -150,6 +156,6 @@ footer ul{
 }
 
 a{
-    color: var(--white-color);
+    color: var(--white-color);;
 }
 
